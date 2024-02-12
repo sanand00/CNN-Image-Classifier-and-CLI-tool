@@ -18,7 +18,7 @@ The training was conducted using 10000, 32x32 resolution cat and dog images from
 ## Performance
 
 The current iteration of the trained model obtains an AUC of 0.93 (see images in `trained_models/res_net_18/` for more performance data). Currently the model is quite simple due to personal hardware limitations; it is likely that with access to better hardware the performance of the 
-CNN could be improved substantially. 
+CNN can be improved substantially. 
 
 ![RoC Curve](trained_models/res_net_18/res_net_18_roc_curve.png)
 
