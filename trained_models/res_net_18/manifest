@@ -1,0 +1,6 @@
+filename,filesize,header
+res_net_18_1.pt,100000000,False
+res_net_18_2.pt,100000000,False
+res_net_18_3.pt,100000000,False
+res_net_18_4.pt,100000000,False
+res_net_18_5.pt,59893356,False
