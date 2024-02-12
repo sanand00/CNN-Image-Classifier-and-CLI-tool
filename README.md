@@ -12,7 +12,7 @@ An optional `--gpu` flag can be provided if you would like to utilise your NVIDI
 
 ## Training
 
-The training was conducted using 10000, 32x32 resolution cat and dog images from the [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html) dataset. Furthermore a simple data augmentation procedure was conducted (as suggested in the [*Deepl-Supervised Nets*](https://arxiv.org/abs/1409.5185) paper), consisting of a random horizontal flip, followed by a four pixel padding, and then a random 32x32 square crop.
+The training was conducted using 10000, 32x32 resolution cat and dog images from the [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html) dataset. Furthermore a simple data augmentation procedure was conducted (as suggested in the [*Deeply-Supervised Nets*](https://arxiv.org/abs/1409.5185) paper), consisting of a random horizontal flip, followed by a four pixel padding, and then a random 32x32 square crop.
 
 
 ## Performance
