@@ -24,4 +24,4 @@ CNN can be improved substantially.
 
 ## Future Improvements
 
-Next I would like to try incorporating ideas from the *Inception module* outlined in the paper, [*Going deeper with convolutions*](https://arxiv.org/abs/1409.4842).
+I would like to try incorporating ideas from the *Inception module* outlined in the paper, [*Going deeper with convolutions*](https://arxiv.org/abs/1409.4842).
