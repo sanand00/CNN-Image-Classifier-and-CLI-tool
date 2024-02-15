@@ -1,4 +1,4 @@
-# CNN-Image-Classifier-and-CLI-tool
+# CNN Image Classifier and CLI Tool
 
 A Convolutional Neural Network for classifying an image as a cat or a dog. The CNN was built using PyTorch and its architecture was inspired by [VGG16](https://arxiv.org/abs/1409.1556) and [ResNet](https://arxiv.org/abs/1512.03385). This model is not intended to achieve state of the art performance, but rather as 
 a side-project to work on my machine-learning skills.
