@@ -31,9 +31,6 @@ def main():
     training_set = Dataset(partition['train'], labels)
     training_loader = torch.utils.data.DataLoader(training_set, batch_size = train_params['batch_size'], shuffle = True)
 
-    test_set = Dataset(partition['test'], labels)
-    test_loader = torch.utils.data.DataLoader(test_set, batch_size = train_params['batch_size'], shuffle = True)
-
     net = ResNet512(res_layers)
     net = net.to(device)
 
@@ -45,6 +42,7 @@ def main():
 
     torch.save(results['net'], 'trained_models/res_net_18/res_net_18.pt')
     split = Split(inputfile= 'trained_models/res_net_18/res_net_18.pt', outputdir =  'trained_models/res_net_18')
+    split.split()
     os.remove('trained_models/res_net_18/res_net_18.pt')
     plot.savefig('trained_models/res_net_18/res_net_18_convergence_plot.png')
 
