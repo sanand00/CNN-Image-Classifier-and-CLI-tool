@@ -15,8 +15,9 @@ from models.cnn_resnet import ResNet512
 from engines.train import cnn_train
 from engines.validation import binary_validate
 
-partition = pickle.load(open('data/partition', 'rb'))
-labels = pickle.load(open('data/labels', 'rb'))
+with open('data/partition', 'rb') as file1, open('data/labels', 'rb') as file2:
+    partition = pickle.load(file1)
+    labels = pickle.load(file2)
 
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 torch.cuda.empty_cache()
