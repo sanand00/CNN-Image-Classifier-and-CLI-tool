@@ -55,11 +55,9 @@ for i in range(num):
     partition['train'].append(new_name)
     labels[str(new_name)] = labels[str(name)]
     torch.save(img, 'data/' + new_name + '.pt')
-    
-partition_file = open('data/partition', 'wb')
-pickle.dump(partition, partition_file)
-partition_file.close()
 
-labels_file = open('data/labels', 'wb')
-pickle.dump(labels, labels_file)
-labels_file.close()
+with open('data/partition', 'wb') as file1, open('data/labels', 'wb') as file2:
+    partition_file = file1
+    pickle.dump(partition, partition_file)
+    labels_file = file2
+    pickle.dump(labels, labels_file)
