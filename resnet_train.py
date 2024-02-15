@@ -1,19 +1,13 @@
-from alive_progress import alive_bar
 import pickle
 from filesplit.split import Split
 import os
-import numpy as np
-from sklearn import metrics
-import matplotlib.pyplot as plt 
 import torch
 import torch.optim as optim
 import torch.nn as nn
 
-
 from datasets.dataset import Dataset
 from models.cnn_resnet import ResNet512
 from engines.train import cnn_train
-from engines.validation import binary_validate
 
 def main():
     with open('data/partition', 'rb') as file1, open('data/labels', 'rb') as file2:
