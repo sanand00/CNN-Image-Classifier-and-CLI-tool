@@ -1,13 +1,8 @@
-from alive_progress import alive_bar
 import pickle
 from filesplit.merge import Merge
 import os
-import numpy as np
 from sklearn import metrics
-import matplotlib.pyplot as plt 
 import torch
-import torch.optim as optim
-import torch.nn as nn
 import pandas as pd
 
 from datasets.dataset import Dataset
